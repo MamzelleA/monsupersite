@@ -5,12 +5,14 @@ abstract class Application
 {
 	protected $httpRequest;
 	protected $httpResponse;
+	protected $user;
 	protected $name;
 
 	public function __construct ()
 	{
 		$this->httpRequest = new HTTPRequest;
 		$this->httpResponse = new HTTPResponse;
+		$this->user = new User;
 		$this->name = '';
 	}
 
